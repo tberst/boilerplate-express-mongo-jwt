@@ -22,6 +22,7 @@ class Application {
         this.config();
         this.authentication();
         this.routes();
+        this.front();
         this.mongo();
        
     }
