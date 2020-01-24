@@ -1,0 +1,17 @@
+{
+    "rest-client.environmentVariables": {
+        "$shared": {
+            "serverUrl": "localhost:3000",
+            "email": "test@test.com",
+            "password": "password01",
+            "authToken" : ""
+        },
+        "local": {
+            "version": "v2"
+  
+        },
+        "production": {
+        
+        }
+    }
+}

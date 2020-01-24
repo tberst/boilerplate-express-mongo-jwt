@@ -1,0 +1,27 @@
+
+POST http://{{serverUrl}}/api/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "{{email}}",
+    "password" : "{{password}}",
+    "confirmPassword" : "{{password}}"
+}
+
+###
+
+# @name authenticate
+POST http://{{serverUrl}}/api/user/authenticate HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"{{email}}",
+    "password" : "{{password}}"
+}
+
+@authToken = {{authenticate.response.body.$.token}}
+
+###
+
+GET http://{{serverUrl}}/api/value HTTP/1.1
+Authorization: jwt {{authToken}} 
