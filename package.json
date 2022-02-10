@@ -39,7 +39,7 @@
     "@types/passport-jwt": "^3.0.3",
     "@types/passport-local": "^1.0.33",
     "concurrently": "^5.0.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.2",
     "shelljs": "^0.8.3",
     "typescript": "^3.7.5"
